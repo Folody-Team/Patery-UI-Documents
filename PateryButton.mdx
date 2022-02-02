@@ -1,0 +1,67 @@
+# PateryButton
+## **Infomation**
+A simple patery ui button components
+
+## Usage
+
+```jsx
+<PateryButton>Hello</PateryButton>
+```
+
+### Ouput
+
+Here is the output of the sample code. It is similar to what PateryButton can support.
+
+<div style="background: rgb(202,202,202); padding: 10px; border-radius: 8px;">
+  <button>hello</button>
+</div>
+
+### Styles
+
+```jsx
+<PateryButton style={{ backgroundColor: "#4542f5", color: "#ffffff"}}>Hello</PateryButton>
+<PateryButton style={{ backgroundColor: "#00ff4c", color: "#ffffff"}}>Hello</PateryButton>
+<PateryButton style={{ backgroundColor: "#fc3826", color: "#ffffff"}}>Hello</PateryButton>
+```
+<div class="warning">
+  <h3 className="warning-title">🗳 Warning</h3>
+  <p class="warning-content">You cannot custom style by adding a className. Because unfortunately in v1 this function is not available.</p>
+</div>
+
+### Ouput
+
+Here is the output of the sample code. It is similar to what PateryButton can support.
+
+<div style="background: rgb(202,202,202); padding: 10px; border-radius: 8px; display: flex;">
+  <button style="background: #4542f5; color: #fff;" className="text">hello</button>
+  <button style="background: #00ff4c; color: #fff;" className="text">hello</button>
+  <button style="background: #ff304f; color: #fff;" className="text">hello</button>
+</div>
+
+### Add icon
+
+```jsx
+<PateryButton icon={"🧐"}>Hello</PateryButton>
+```
+
+### Ouput
+
+Here is the output of the sample code. It is similar to what PateryButton can support.
+
+<div style="background: rgb(202,202,202); padding: 10px; border-radius: 8px;">
+  <button icon="🧐">hello</button>
+</div>
+
+
+**NOTES:** Icons can be icon components of other libraries you can add.
+### Example
+```jsx
+<PateryButton icon={<Icon_Component/>}>Hello</PateryButton>
+```
+
+<br/>
+<br/>
+
+| properties | condition        |
+| ---------- | -----------      |
+| `icon`     | String/Component |
